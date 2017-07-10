@@ -1,0 +1,5 @@
+/*
+!.gitignore
+!/wp-content/
+/wp-content/cache/
+/wp-content/uploads/

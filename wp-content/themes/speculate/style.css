@@ -1,0 +1,401 @@
+/*
+ Theme Name:   Speculate
+ Theme URI:    http://demo.childthemestyles.com/speculate/
+Description: Speculate is a child theme for the Twenty Fifteen default theme. You get several enhancements to typography, layout, while maintaining a clean, blog-focused, and a visually stunning design for simplicity. Speculate's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. Just like Twenty Fifteen, we maintained a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
+ Author:       ChildThemeStyles.com
+ Author URI:   https://www.childthemestyles.com
+ Template:     twentyfifteen
+ Version:      1.0.4
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+ Text Domain:  speculate
+*/
+
+body {}
+
+body:before {
+    box-shadow: 5px 0px 7px 0px rgba(0,0,0,0.07);
+}
+.site-header {
+    padding: 5% 7.6923%;
+}
+
+.site-info {
+    display: none;
+}
+
+.main-navigation .menu-item-description {
+    font-family: "Open Sans",sans-serif;
+}
+
+/* Typography */
+body,
+button,
+input,
+select,
+textarea {
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Candara, serif;
+	font-style: italic;
+	font-weight: 400;
+}
+.site-title {
+    font-family: Candara,serif;
+	font-style: italic;
+}
+.site-description {
+    font-family: "Open Sans", sans-serif; 
+	margin: 0.25em 0 0;
+}
+.entry-title {
+	font-size: 38px;
+	font-size: 2.375rem;
+	line-height: 1.1;
+	margin-bottom: 2rem;
+}
+
+code {
+    color: #da855b;
+}
+pre code {
+  color: #333;
+}
+
+/* Elements */
+.page-header {
+	padding: 2% 8%;
+}
+ blockquote {
+ font-size: 24px;
+ font-size: 1.5rem;
+}
+blockquote cite, 
+blockquote small {
+    font-size: 20px;
+    font-size: 1.25rem;
+ }
+.sticky-post {
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.125em;
+    padding: 0.375em 2em 0.313em;
+}
+.entry-content, 
+.entry-summary {
+    padding: 0 7% 10%;
+}
+
+.entry-content a, 
+.entry-summary a, 
+.page-content a, 
+.comment-content a, 
+.pingback .comment-body > a {
+	font-weight: 700;
+    color: #000;
+}
+.entry-content .more-link:after, 
+.entry-summary .more-link:after {
+    content: "...";
+	font-size: initial;
+    line-height: 1;
+    top: 2px;
+}
+.entry-content .more-link {
+	padding: 0;
+    font-family: Candara;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: capitalize;
+
+}
+.entry-content a.more-link, 
+.entry-summary a.more-link {
+	text-decoration: none;
+	border-bottom: none;
+}
+.entry-content a.more-link:hover, 
+.entry-summary a.more-link:focus {
+    color: #707070;
+}
+
+.social-navigation a:before {
+    background-color: #ececec;
+    padding: 0.313em;
+    border-radius: 50%;
+}
+.pagination .next:before {
+    right: 0;
+}
+.pagination .prev, 
+.pagination .next {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
+    background-color: #f7f7f7;
+    color: #333;
+}
+.pagination .prev:hover, 
+.pagination .prev:focus, 
+.pagination .next:hover, 
+.pagination .next:focus {
+    background-color: #707070;
+	color: #fff;
+}
+.dropdown-toggle {
+    top: 0;
+	width: 37px;
+	height: 37px;
+}
+.main-navigation a {
+    padding: 0.5em 0;
+}
+
+/* Phone Large */
+@media screen and (min-width: 38.75em) {
+	.entry-content, .entry-summary {
+		padding: 0 9% 7%;
+	}
+	.entry-footer {
+		padding: 2% 9%;
+	}
+	.banner .widget {
+		width: auto;
+		margin: 0 7.6923% 6%;
+	}	
+}
+
+/* Tablet Small 740px */
+@media screen and (min-width: 46.25em) {
+	.entry-title,
+	.widecolumn h2 {
+		font-size: 44px;
+		font-size: 2.75rem;
+	}	
+	.posted-on:before, 
+	.byline:before, 
+	.cat-links:before, 
+	.tags-links:before, 
+	.comments-link:before, 
+	.entry-format:before, 
+	.edit-link:before, 
+	.full-size-link:before {
+		top: 2px;
+	}	
+	.widget {
+		line-height: 1.313;
+	}	
+	.pagination .nav-links {
+		min-height: 3.313em;
+	}	
+	.pagination .prev, .pagination .next {
+		height: 3.313em;
+		width: 3.313em;
+	}
+	.pagination .page-numbers {
+		line-height: 3.313em;
+	}
+	.pagination .prev:before, 
+	.pagination .next:before {
+		height: inherit;
+		line-height: inherit;
+		width: inherit;
+	}	
+    blockquote {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+  blockquote cite, 
+  blockquote small {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }  
+}
+
+/* Tablet Large 880px */
+@media screen and (min-width: 55em) {
+	.site-title {
+		font-size: 52px;
+		font-size: 3.25rem;
+	}
+	.site-description {
+		font-size: 22px;
+		font-size: 1.375rem;
+	}
+	.post-password-form label, 
+	.post-navigation .meta-nav, 
+	.comment-navigation, 
+	.image-navigation, 
+	.author-heading, 
+	.author-bio, 
+	.entry-footer, 
+	.page-links a, 
+	.page-links span, 
+	.comment-metadata, 
+	.pingback .edit-link, 
+	.comment-list .reply, 
+	.comment-notes, 
+	.comment-awaiting-moderation, 
+	.logged-in-as, 
+	.comment-form label, 
+	.form-allowed-tags, 
+	.site-info, 
+	.wp-caption-text, 
+	.gallery-caption, 
+	.entry-caption, 
+	.widecolumn label, 
+	.widecolumn .mu_register label {
+		 font-size: 20px;
+		font-size: 1.25rem;
+	}
+	.posted-on:before, 
+	.byline:before, 
+	.cat-links:before, 
+	.tags-links:before, 
+	.comments-link:before, 
+	.entry-format:before, 
+	.edit-link:before, 
+	.full-size-link:before {
+		top: 1px;
+	}	
+	.main-navigation a {
+		padding: 0.5em 0;
+	}	
+}
+
+/* Desktop Small 955px */
+@media screen and (min-width: 59.6875em) {
+	.site-main {
+		padding: 6% 0;
+	}
+	.site-header {
+		margin: 12% 0;
+	}
+
+	.site-title {
+		font-size: 30px;
+		font-size: 2.2rem;
+	}
+	.site-info {
+		padding: 2% 10%;
+	}
+	.site-header,
+	.widget	{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.banner .widget {
+		padding-left: 0;
+		padding-right: 0;
+		width: auto;
+		margin: 0 8.3333% 6%;
+	}	
+	.main-navigation,
+	.social-navigation {
+		margin-left: 10%;
+		margin-right: 10%
+	}	
+	.dropdown-toggle {
+		height: 32px;
+		width: 32px;
+	}
+	.entry-content, 
+	.entry-summary {
+		padding: 0 10% 7%;
+	}
+	.entry-footer {
+		padding: 1.5% 10%;
+	}	
+	.main-navigation {
+		font-size: 22px;
+		font-size: 1.375rem;
+	}
+	.widget {
+		font-size: 21px;
+		font-size: 1.313rem;
+	}	
+  blockquote {
+    font-size: 24px;
+    font-size: 1.5rem;
+	}
+  blockquote cite, blockquote small {
+    font-size: 18px;
+    font-size: 1.125rem;
+	}  
+}
+
+/* Desktop Medium 1100px */
+@media screen and (min-width: 68.75em) {
+	.site-title {
+		font-size: 43px;
+		font-size: 2.688rem;
+	}
+	.site-description {
+		font-size: 20px;
+		font-size: 1.25rem;
+	}
+	.site-header,
+	.widget	{
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+	.main-navigation,
+	.social-navigation {
+		margin-left: 15%;
+		margin-right: 15%
+	}	
+	.dropdown-toggle {
+		height: 30px;
+		width: 30px;
+	}
+	.entry-title,
+	.widecolumn h2 {
+		font-size: 48px;
+		font-size: 3rem;
+	}
+    blockquote {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+  blockquote cite, 
+  blockquote small {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+
+/* Desktop Large 1240px */
+@media screen and (min-width: 77.5em) {
+	.site-title {
+		font-size: 48px;
+		font-size: 3rem;
+		line-height: 1.125;
+	}
+	.site-description {
+		font-size: 22px;
+		font-size: 1.375rem;
+	}
+	.entry-title,
+	.widecolumn h2 {
+		font-size: 50px;
+		font-size: 3.125rem;
+	}		
+	.widget {
+		font-size: 23px;
+		font-size: 1.438rem;
+	}	
+	.dropdown-toggle {
+		top: 1px;
+	}
+
+}
